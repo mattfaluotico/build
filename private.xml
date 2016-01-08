@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Capslock to hyper</name>
+        <appendix>(F19 to Hyper (ctrl+shift+cmd+opt) + F19 Only, send escape)</appendix>
+        <identifier>private.f192f19_escape</identifier>
+        <autogen>
+            --KeyOverlaidModifier--
+            KeyCode::F19,
+            KeyCode::COMMAND_L,
+            ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+    
+    <replacementdef>
+        <replacementname>UBIQUITOUS_VIM_BINDINGS_IGNORE_APPS</replacementname>
+        <replacementvalue>
+            TERMINAL,
+            VI,
+            PASSWORD,
+            FIREFOX,
+            EMACS,
+            ECLIPSE,
+            XCODE,
+            SUBLIMETEXT
+        </replacementvalue>
+    </replacementdef>
+    
+    <item>
+        <name>UBIQUITOUS_VIM_BINDINGS_IGNORE_APPS has been overwrote.</name>
+    </item>
+    
+</root>
