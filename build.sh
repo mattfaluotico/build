@@ -58,8 +58,8 @@ function casks {
 	# brew cask install atom
 	brew cask install slate
 	# brew cask install spotify
-	# brew cask install karabiner
-	# brew cask install seil
+	brew cask install karabiner
+	brew cask install seil
 	# brew cask install firefox
 	# brew cask install dash
 	# brew cask install drop-to-gif
@@ -115,7 +115,6 @@ message "apps installed"
 touch "~/.slate.js"
 curl https://raw.githubusercontent.com/jigish/dotfiles/master/slate.js | cat > .slate.js
 
-
-# the fuck
-echo "installing the fuck"
-sudo pip install thefuck
+touch ~/Desktop/private.xml
+curl -L "https://raw.github.com/mattfxyz/build/master/private.xml" | cat > ~/Desktop/private.xml
+message "private.xml for karabiner is located on your desktop"
